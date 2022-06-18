@@ -5,15 +5,12 @@ module.exports = {
   defaultNetwork: 'hardhat',
   networks: {
     rinkeby: {
-      url:
-        'https://eth-rinkeby.alchemyapi.io/v2/84QznWTEamOBgmDEEUnqZhZ4SUhZQF73',
-      accounts: [
-        '5957a3cd3e4c8f220ed43435153eab787d35c1bb10263932d515241d5baa5ccd',
-      ],
+      url: `${process.env.RINKEBY_ALCHMEMY_URL}`,
+      accounts: [`${process.env.PRIVATE_KEY_METAMASK}`],
     },
   },
   etherscan: {
-    apiKey: 'KGDK6N9NA9B1YTTJEVSF23Z3CEBP15DUXK',
+    apiKey: `${process.env.ETHERSCAN_API_KEY}`,
   },
   solidity: {
     version: '0.8.4',
@@ -25,6 +22,3 @@ module.exports = {
     },
   },
 }
-
-// PRIVATE_KEY = 5957a3cd3e4c8f220ed43435153eab787d35c1bb10263932d515241d5baa5ccd
-// CONTRACT_URL=https://eth-ropsten.alchemyapi.io/v2/84QznWTEamOBgmDEEUnqZhZ4SUhZQF73

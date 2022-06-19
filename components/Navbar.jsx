@@ -43,7 +43,7 @@ const Navbar = () => {
         {account ? (
           <div className="p-2 bg-white rounded-xl mt-2">
             <p className="text-black font-bold text-center font-style-2 tracking-widest">
-              Wallet Address: {account}
+              ⚡️ Wallet Address: {account} ⚡️
             </p>
           </div>
         ) : (

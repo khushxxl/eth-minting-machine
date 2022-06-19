@@ -47,7 +47,10 @@ const Navbar = () => {
             </p>
           </div>
         ) : (
-          <button className="p-2 mt-2 text-black bg-white font-style-2 rounded-2xl text-md font-bold">
+          <button
+            onClick={connectWallet}
+            className="p-2 mt-2 text-black bg-white font-style-2 rounded-2xl text-md font-bold"
+          >
             Connect Wallet
           </button>
         )}
